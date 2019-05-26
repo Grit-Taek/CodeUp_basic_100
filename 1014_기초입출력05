@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main()
+{
+    char n,b;
+    scanf("%c %c",&n,&b);
+    printf("%c %c",b, n);
+    return 0;
+}
