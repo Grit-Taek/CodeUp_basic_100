@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main()
+{
+    int year=0, month = 0, day=0;
+    char a='0', b='0';
+    scanf("%d%c%d%c%d",&year,&a,&month,&b,&day);
+    printf("%04d%c%02d%c%02d",year,a,month,b,day);
+    return 0;
+
+}
+
