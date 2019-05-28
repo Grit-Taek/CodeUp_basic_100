@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    scanf("%d.%d",&a,&b); // scanf 사이에 써주면 그대로 입력때 써주면 무시하는구나
+    printf("%d\n%d", a,b);
+    return 0;
+}
