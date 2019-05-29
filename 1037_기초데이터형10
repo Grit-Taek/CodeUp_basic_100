@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main()
+{
+    unsigned int a;
+    scanf("%u",&a);
+    printf("%c",a);
+    return 0;
+
+}
