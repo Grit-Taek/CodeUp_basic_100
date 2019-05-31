@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int h,b,c;
+    scanf("%d %d %d",&h,&b,&c);
+    double res = (double)h*b*c/8388608;
+    printf("%.2lf MB",res);
+    return 0;
+
+}
