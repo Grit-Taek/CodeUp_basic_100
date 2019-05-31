@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+
+    int i= 1;
+    int sum = 0;
+
+    while(1)
+    {
+        sum += i;
+        if(sum >= a)
+        {
+            printf("%d",i);
+            break;
+        }
+        i++;
+    }
+    return 0;
+}
