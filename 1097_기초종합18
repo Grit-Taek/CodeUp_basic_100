@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   
+    int arr[20][20]={0,};
+
+    for(int i=1;i<20;i++)
+    {
+        for(int j=1;j<20;j++)
+            scanf("%d",&arr[i][j]);
+    }
+    int tc;
+    scanf("%d",&tc);
+    int b,c;
+    for(int i=0;i<tc;i++) {
+        scanf("%d %d", &b, &c);
+        for (int j = 1; j < 20; j++) {
+            if (arr[b][j] == 0)
+                arr[b][j] = 1;
+            else
+                arr[b][j] = 0;
+        
+            if (arr[j][c] == 0)
+                arr[j][c] = 1;
+            else
+                arr[j][c] = 0;
+        }
+    }
+
+        for(int i=1;i<20;i++)
+        {
+            for(int j=1;j<20;j++)
+                printf("%d ",arr[i][j]);
+
+            printf("\n");
+        }
+        return 0;
+}
