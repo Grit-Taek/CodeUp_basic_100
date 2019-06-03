@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int h,w;
+    scanf("%d %d",&h,&w);
+    int arr[h+1][w+1];
+
+    for(int i=0;i<=h;i++)
+    {
+        for(int j=0;j<=w;j++)
+            arr[i][j] = 0;
+    }
+    int num;
+    scanf("%d",&num);
+
+    for(int i=0;i<num;i++)
+    {
+        int len,d,x,y;  // d=0 가로, d=1 세로
+        scanf("%d %d %d %d",&len,&d,&x,&y);
+        if(d==0)
+        {
+            for(int i=y;i<y+len;i++)
+            {
+                arr[x][i] = 1;
+            }
+        }
+        else
+        {
+            for(int i=x;i<x+len;i++)
+            {
+                arr[i][y] = 1;
+            }
+        }
+    }
+
+    for(int i=1;i<=h;i++)
+    {
+        for(int j=1;j<=w;j++)
+            printf("%d ",arr[i][j]);
+
+        printf("\n");
+    }
+}
